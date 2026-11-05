@@ -1,6 +1,6 @@
 # Text-to-Gloss (T2G) Translation for Sign Languages
 
-This repository contains the datasets and code to train, fine-tune, and evaluate deep learning Seq2Seq models for **Text-to-Gloss (T2G)** translation. The project focuses on translating spoken language text into Sign Language glosses, specifically targeting **German to DGS** (Phoenix-14T) and **Portuguese to LIBRAS** (VLibrasBD).
+This repository contains the datasets and code to train, fine-tune, and evaluate deep learning Seq2Seq models for **Text-to-Gloss (T2G)** translation. The project focuses on translating spoken language text into Sign Language glosses, specifically targeting **German to DGS (German Sign Language)** (Phoenix-14T) and **Portuguese to LIBRAS (Brazilian Sign Language)** (VLibrasBD).
 
 ##  Supported Models
 The experiments compare three robust architectures optimized for low-resource translation and VRAM constraints:
