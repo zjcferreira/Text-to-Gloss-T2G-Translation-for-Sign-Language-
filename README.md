@@ -2,13 +2,13 @@
 
 This repository contains the datasets and code to train, fine-tune, and evaluate deep learning Seq2Seq models for **Text-to-Gloss (T2G)** translation. The project focuses on translating spoken language text into Sign Language glosses, specifically targeting **German to DGS** (Phoenix-14T) and **Portuguese to LIBRAS** (VLibrasBD).
 
-## 🚀 Supported Models
+##  Supported Models
 The experiments compare three robust architectures optimized for low-resource translation and VRAM constraints:
 * **mBART** (`facebook/mbart-large-50-many-to-many-mmt`)
 * **NLLB** (`facebook/nllb-200-distilled-600M`)
 * **FLAN-T5** (`google/flan-t5-base`)
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 T2G_Codes_Datasets/
