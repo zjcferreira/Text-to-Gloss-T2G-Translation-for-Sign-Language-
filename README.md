@@ -33,7 +33,7 @@ T2G_Codes_Datasets/
     └── NLLB-VLibrasBD/         # NLLB experiments for VLibrasBD
 ```
 
-## ⚙️ Environment Setup & Installation
+##  Environment Setup & Installation
 
 To ensure full reproducibility and avoid out-of-memory (OOM) errors or library conflicts, it is highly recommended to use a Conda environment.
 
