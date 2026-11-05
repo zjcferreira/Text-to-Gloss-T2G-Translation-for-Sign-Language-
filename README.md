@@ -77,7 +77,7 @@ The notebooks implement a rigorous NLP pipeline tailored for Sign Language gener
    ```
 4. Run all cells. The notebook will automatically process the data, train Phase 1, train Phase 2, and finally evaluate the blind test set.
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 All inferences are evaluated strictly using:
 * **BLEUs (1-4):** Computed with `tokenize='none'` to ensure rigorous, space-aware gloss matching (the standard for Sign Language tasks).
 * **ROUGE-L:** To measure the longest common sequence and overall fluency.
