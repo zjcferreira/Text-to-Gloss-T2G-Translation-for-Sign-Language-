@@ -53,13 +53,11 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 pip install transformers datasets accelerate evaluate sacrebleu pandas numpy jupyterlab tqdm bitsandbytes
 ```
 
-> **Note on `torchvision` conflict:** If you encounter a `VideoReader` import error from the `datasets` library during training, simply uninstall torchvision (`pip uninstall torchvision -y`) or use the bypass code provided inside the Jupyter Notebooks.
-
 ##  Methodology
 
 The notebooks implement a rigorous NLP pipeline tailored for Sign Language generation:
 1. **Data Preparation:** The `gen_variants.py` script cleans the datasets, normalizes text (lowercasing), removes duplicates, and generates a strict vocabulary constraint (`gloss_vocab.txt`).
-2. **Two-Phase Training:**
+2. **Two-Phase Training (Only adopted in the Phoenix-14T dataset. In VLibrasBD, we adopted an one-phase training):**
    * **Phase 1 (Generalist):** Trains the model using data augmentation and/or robust learning rates with Differential Learning Rates (DLR).
    * **Phase 2 (Expert Fine-Tuning):** A subsequent refinement phase using strictly clean data and a lower learning rate, preventing catastrophic forgetting.
 3. **8-bit Optimization:** Models are loaded using `AdamW8bit` (via `bitsandbytes`) and `float16` precision to prevent VRAM explosion while maintaining high batch sizes effectively through gradient accumulation.
