@@ -57,7 +57,7 @@ pip install transformers datasets accelerate evaluate sacrebleu pandas numpy jup
 
 The notebooks implement a rigorous NLP pipeline tailored for Sign Language generation:
 1. **Data Preparation:** The `gen_variants.py` script cleans the datasets, normalizes text (lowercasing), removes duplicates, and generates a strict vocabulary constraint (`gloss_vocab.txt`).
-2. **Two-Phase Training/*:**
+2. **Two-Phase Training*:**
    * **Phase 1 (Generalist):** Trains the model using data augmentation and/or robust learning rates with Differential Learning Rates (DLR).
    * **Phase 2 (Expert Fine-Tuning):** A subsequent refinement phase using strictly clean data and a lower learning rate, preventing catastrophic forgetting.
    * *We adopted two-phase training in the Phoenix-14T dataset. In VLibrasBD, we adopted a one-phase training.
